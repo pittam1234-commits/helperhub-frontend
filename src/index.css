@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+}
+
+nav {
+  background: #1e3a8a;
+  padding: 20px;
+}
+
+nav h2 {
+  color: white;
+}
+
+nav a {
+  color: white;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.container {
+  padding: 40px;
+}
+
+input {
+  display: block;
+  width: 300px;
+  padding: 12px;
+  margin: 10px 0;
+}
+
+button {
+  padding: 12px 25px;
+  cursor: pointer;
+}
+
+.worker-card {
+  background: white;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 10px;
+}
