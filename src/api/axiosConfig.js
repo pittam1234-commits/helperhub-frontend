@@ -1,22 +1,21 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://helperhub-backend-yzpe.onrender.com";
+  baseURL: "https://helperhub-backend-yzpe.onrender.com",
   headers: {
     "Content-Type": "application/json",
   },
 });
 
 api.interceptors.request.use((config) => {
-
   const publicUrls = [
     "/auth/register",
     "/auth/login",
     "/password/forgot",
-    "/password/reset"
+    "/password/reset",
   ];
 
-  const isPublic = publicUrls.some(url =>
+  const isPublic = publicUrls.some((url) =>
     config.url?.startsWith(url)
   );
 
@@ -29,7 +28,6 @@ api.interceptors.request.use((config) => {
   }
 
   return config;
-
 });
 
 export default api;
